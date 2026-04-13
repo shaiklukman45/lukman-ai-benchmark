@@ -1,0 +1,4 @@
+Assistant,Quality Score (out of 10),Avg Response Time (s),Accuracy (%),Efficiency Score
+GitHub Copilot,8.4,2.1,84,4.0
+ChatGPT-4o,9.1,3.4,91,2.68
+Gemini 1.5,7.8,1.8,78,4.33
