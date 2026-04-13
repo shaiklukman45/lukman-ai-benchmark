@@ -1,0 +1,27 @@
+benchmark:
+  name: "AI Coding Assistant Benchmark"
+  author: "V Lukman"
+  date: "2026-04-13"
+  version: "1.0"
+
+assistants:
+  - name: "GitHub Copilot"
+    version: "GPT-4o based"
+    access: "VS Code Extension"
+  - name: "ChatGPT-4o"
+    version: "GPT-4o"
+    access: "chat.openai.com"
+  - name: "Gemini 1.5"
+    version: "Gemini 1.5 Pro"
+    access: "gemini.google.com"
+
+evaluation:
+  runs_per_task: 3
+  scoring_criteria:
+    - correctness     # Does the code actually work?
+    - clarity         # Is it easy to read and understand?
+    - completeness    # Does it fully answer the prompt?
+  max_score_per_criteria: 10
+
+tasks_file: "benchmarks/test_prompts.json"
+results_dir: "results/"
